@@ -1,0 +1,7 @@
+rules:
+  - id: detect-eval
+    patterns:
+      - pattern: eval(...)
+    message: "Use of eval() is dangerous"
+    languages: [python]
+    severity: WARNING
