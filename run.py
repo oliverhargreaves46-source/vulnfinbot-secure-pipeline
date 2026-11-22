@@ -4,5 +4,6 @@ from app.routes import bp
 app = Flask(__name__)
 app.register_blueprint(bp)
 
-if name == 'main':
+if name == '__main__':
     app.run(host='0.0.0.0', port=5000)
+    
